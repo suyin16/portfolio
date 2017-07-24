@@ -49,7 +49,20 @@ function normalImg(x) {
   <li style="font-size:180%;">Favorite color is blue</li>
   <li style="font-size:180%;">Favorite website is Netflix and YouTube</li>   <a href="https://www.netflix.com/">Netflix</a> <a href="https://www.youtube.com/">YouTube</a>
   <li style="font-size:180%;">Favorite movie is Captain America: Civil War</li>
-  <img src=Civil-War-2.jpg width= "400" ,height= "400">
+  <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="Civil-War-2.jpg" alt="War" style=height="300px";>
+
+
+  <script>
+  function bigImg(x) {
+      x.style.height = "300px";
+  }
+
+  function normalImg(x) {
+      x.style.height = "200px";
+  }
+  </script>
+
+
   <li style="font-size:180%;">Favorite subject is math and science</li>
 </ul>
 
